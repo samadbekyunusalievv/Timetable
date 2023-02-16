@@ -1,0 +1,2 @@
+# timetable
+ Manas University Timetable
