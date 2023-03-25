@@ -6,7 +6,6 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       backgroundColor: Colors.transparent,
       body: Padding(
         padding: const EdgeInsets.all(25.0),
@@ -15,10 +14,9 @@ class Page1 extends StatelessWidget {
           child: Container(
             color: Colors.white30,
             child: ListView.separated(
-
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
-                  onLongPressUp: () => showDialog(
+                  onTap: () => showDialog(
                       context: context,
                       builder: (BuildContext context) {
                         return Dialog(
@@ -26,7 +24,7 @@ class Page1 extends StatelessWidget {
                               borderRadius:
                               BorderRadius.circular(40.0)), //this right here
                           child: SizedBox(
-                            // height: 150,
+                            height: 150,
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
@@ -45,7 +43,7 @@ class Page1 extends StatelessWidget {
                         );
                       }),
                   child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(7.0),
